@@ -1,0 +1,3 @@
+#!/bin/sh
+#get container name andm ip address
+docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' $(docker ps -aq)

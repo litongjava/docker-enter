@@ -1,0 +1,3 @@
+#!/bin/sh
+#get host binds
+docker inspect -f '{{.Name}} - {{.HostConfig.Binds}}' $(docker ps -aq)

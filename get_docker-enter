@@ -1,0 +1,9 @@
+rm -rf /bin/docker-enter
+rm -rf /bin/importenv
+rm -rf /bin/nsenter
+wget -qO /bin/docker-enter http://resources.uairobot.com/public/linux_software/docker/docker-enter/docker-enter
+wget -qO /bin/importenv http://resources.uairobot.com/public/linux_software/docker/docker-enter/importenv
+wget -qO /bin/nsenter http://resources.uairobot.com/public/linux_software/docker/docker-enter/nsenter
+chmod +x /bin/docker-enter
+chmod +x /bin/importenv
+chmod +x /bin/nsenter
