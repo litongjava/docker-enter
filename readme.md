@@ -32,3 +32,11 @@ sudo chmod u+x /bin/docker-volume
 sudo chmod u+x /bin/importenv
 sudo chmod u+x /bin/nsenter
 ```
+
+## use
+使用docker-enter 进入容器
+```
+docker run --name nodejs16 --network=host -dit -v /data:/data node:16.16.0-slim
+docker ps -a
+docker-enter nodejs16
+```
